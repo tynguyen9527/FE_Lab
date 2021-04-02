@@ -4,6 +4,7 @@ import { Employee } from 'src/data/employee';
 import { BaseService } from 'src/services/base.service';
 import { DeleteEmployeeComponent } from '../delete-employee/delete-employee.component';
 import { InsertEmployeeComponent } from '../insert-employee/insert-employee.component';
+import { UpdateEmployeeComponent } from '../update-employee/update-employee.component';
 
 @Component({
   selector: 'app-home-employee',
@@ -28,17 +29,17 @@ export class HomeEmployeeComponent implements OnInit {
           });
   }
 
-  // update(item:any){
-  //   console.log(item);
-  //   var modalRef =  this.modalService.open(UpdateEmployeeComponent, {ariaLabelledBy: 'modal-basic-title'});
-  //   modalRef.componentInstance.item = item;
-  //   modalRef.result.then((result) => {
-  //     console.log(result);
-  //     this.fetch();
-  //   }, (reason) => {
-  //     this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-  //   });
-  // }
+  update(item:any){
+    console.log(item);
+    var modalRef =  this.modalService.open(UpdateEmployeeComponent, {ariaLabelledBy: 'modal-basic-title'});
+    modalRef.componentInstance.item = item;
+    modalRef.result.then((result) => {
+      console.log(result);
+      this.fetch();
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
 
   delete(item:string){
     console.log(item);

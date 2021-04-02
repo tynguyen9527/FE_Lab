@@ -19,6 +19,7 @@ import { HomePositionComponent } from 'src/pages/homePosition/home-position/home
 import { InsertPositionComponent } from 'src/pages/homePosition/insert-position/insert-position.component';
 import { DeletePositionComponent } from 'src/pages/homePosition/delete-position/delete-position.component';
 import { UpdatePositionComponent } from 'src/pages/homePosition/update-position/update-position.component';
+import { UpdateEmployeeComponent } from 'src/pages/homeEmployee/update-employee/update-employee.component';
 
 
 
@@ -32,6 +33,7 @@ import { UpdatePositionComponent } from 'src/pages/homePosition/update-position/
     HomeEmployeeComponent,
     InsertEmployeeComponent,
     DeleteEmployeeComponent,
+    UpdateEmployeeComponent,
     HomePositionComponent,
     InsertPositionComponent,
     DeletePositionComponent,

@@ -4,13 +4,16 @@
     <table>
       <tr>
         <th>Name Employee</th>
-        <th>ID</th>
+        <th>Department</th>
+        <th>Position</th>
       </tr>
       <tr *ngFor="let item of employees" >
         
         <td>{{item.name}}</td>
-        <td><button > Edit</button></td>
-        <td><button >Delete</button></td>
+        <td>{{item.departmentName}}</td>
+        <td>{{item.positionName}}</td>
+        <td><button (click)="update(item)"> Edit</button></td>
+        <td><button (click)="delete(item.id)">Delete</button></td>
       </tr>
     </table>
 
