@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <table>
+      <tr>
+        <th>Name Position</th>
+        <th>ID</th>
+      </tr>
+      <tr *ngFor="let item of positions" >
+        
+        <td>{{item.name}}</td>
+        <td>{{item.id}}</td>
+        <td><button (click)="update(item)"> Edit</button></td>
+        <td><button (click)="delete(item.id)">Delete</button></td>
+      </tr>
+    </table>
+
+  </body>
+</html>
+<button class="btn btn-lg btn-outline-primary" (click)="open(null)">Add</button>

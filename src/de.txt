@@ -1,0 +1,3 @@
+quan phong ban (Id, Name)
+quan ly chuc vu (Id, Name)
+quan ly nhan vien (Id. PBanId, , CvuId, Name) (Search ten nhan vien, PHban. Cvu)

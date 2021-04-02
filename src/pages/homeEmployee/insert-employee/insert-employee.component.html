@@ -1,0 +1,23 @@
+<app-modal-header [data]="modalHeader" (onAction)="close($event)" ></app-modal-header>
+
+<form [formGroup]="insertForm">
+  
+  <label>
+    Name:
+    <input type="text" formControlName="name" id="employeeName">
+  </label>
+  <br>
+    
+  <label>
+    Department:
+    <input type="text" formControlName="departmentName" id="departmentName">
+  </label>
+  <br>
+    
+  <label>
+    Position:
+    <input type="text" formControlName="positionName" id="positionName">
+  </label>
+  <br>
+</form>
+<app-modal-footer [data]="modalFooter" (onAction)="save($event)"></app-modal-footer>

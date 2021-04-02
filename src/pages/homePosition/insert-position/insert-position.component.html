@@ -1,0 +1,11 @@
+<app-modal-header [data]="modalHeader" (onAction)="close($event)" ></app-modal-header>
+
+<form [formGroup]="insertForm">
+  
+  <label>
+    Name:
+    <input type="text" formControlName="name" id="positionName">
+  </label>
+  <br>
+</form>
+<app-modal-footer [data]="modalFooter" (onAction)="save($event)"></app-modal-footer>
